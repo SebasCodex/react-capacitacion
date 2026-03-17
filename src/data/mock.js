@@ -2,7 +2,7 @@ export const platosMock = [
 
     { id: 1, nombre: "Lomo saltado", categoria: "segundos", precio: 18, stock: 3, disponible: true },
 
-    { id: 2, nombre: "Arróz con pollo", categoria: "segundos", precio: 12, stock: 5, disponible: true },
+    { id: 2, nombre: "Arroz con pollo", categoria: "segundos", precio: 12, stock: 5, disponible: true },
 
     { id: 3, nombre: "Sopa de verduras", categoria: "entradas", precio: 8, stock: 0, disponible: false },
 

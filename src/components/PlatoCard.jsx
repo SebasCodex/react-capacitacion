@@ -5,7 +5,7 @@ export default function PlatoCard({ plato }) {
 
             <h3>{plato.nombre}</h3>
 
-            <p>Categoría: {plato.categoria}</p>
+            <p>Categoria: {plato.categoria}</p>
 
             <p>Precio: S/{plato.precio}</p>
 

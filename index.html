@@ -1,125 +1,16 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-    <meta charset="UTF-8">
-    <title>Carta Restaurante DOM</title>
-
-    <style>
-        body {
-            font-family: Arial;
-        }
-
-        .card {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-            width: 220px;
-        }
-
-        .disponible {
-            background: #d4edda;
-        }
-
-        .agotado {
-            background: #f8d7da;
-        }
-    </style>
-
 </head>
 
 <body>
-
-    <h1>Carta del Restaurante</h1>
-
-    <div id="carta"></div>
-
-    <button id="btnAgregar">Agregar plato</button>
-
-    <script>
-
-        let platos = [
-
-            { id: 1, nombre: "Lomo saltado", categoria: "segundos", precio: 18, stock: 3, disponible: true },
-
-            { id: 2, nombre: "Arroz con pollo", categoria: "segundos", precio: 12, stock: 5, disponible: true },
-
-            { id: 3, nombre: "Sopa de verduras", categoria: "entradas", precio: 8, stock: 0, disponible: false },
-
-            { id: 4, nombre: "Pollo a la brasa", categoria: "segundos", precio: 20, stock: 4, disponible: true },
-
-            { id: 5, nombre: "Jugo de naranja", categoria: "bebidas", precio: 5, stock: 8, disponible: true }
-
-        ]
-
-        function renderCarta(platos) {
-
-            let contenedor = document.getElementById("carta")
-
-            contenedor.innerHTML = ""
-
-            platos.forEach(plato => {
-
-                contenedor.innerHTML += `
-
-<div class="card ${plato.disponible ? "disponible" : "agotado"}">
-
-<h3>${plato.nombre}</h3>
-
-<p>Categoría: ${plato.categoria}</p>
-
-<p>Precio: S/${plato.precio}</p>
-
-<p>Stock: ${plato.stock}</p>
-
-<p>${plato.disponible ? "Disponible" : "Agotado"}</p>
-
-</div>
-
-`
-
-            })
-
-        }
-
-        renderCarta(platos)
-
-        document.getElementById("btnAgregar").addEventListener("click", () => {
-
-            platos.push({
-
-                id: 6,
-                nombre: "Ceviche",
-                categoria: "segundos",
-                precio: 22,
-                stock: 6,
-                disponible: true
-
-            })
-
-            renderCarta(platos)
-
-        })
-
-    </script>
-
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
->>>>>>> 4f400f72e0c9596e945828000f24954c06bec156

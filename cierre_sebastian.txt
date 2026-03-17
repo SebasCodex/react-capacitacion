@@ -5,7 +5,7 @@ main.jsx es como el punto de inicio de toda la app. Ahí es donde React se conec
 PlatoCard es un componente pequeño y reutilizable. Sirve para mostrar un solo plato y se puede usar varias veces dentro de la app. Por eso va en components/.
 
 3. ¿Por qué ahora sí funciona el import con Vite y antes no con CDN?
-Antes, cuando usaba React con CDN, todo estaba en un solo archivo HTML y el navegador no podía manejar bien imports entre archivos como .jsx o .js.
+Antes, cuando usaba React con CDN, todo estaba en un solo archivo HTML y el navegador no podía manejar bien imports entre archivos como jsx o js
 
 4. ¿Qué va en hooks/, services/ y context/?
 Las carpetas hooks,services y context se van a usar más adelante cuando la app crezca. En hooks/ voy a guardar funciones reutilizables de React

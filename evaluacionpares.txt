@@ -1,0 +1,14 @@
+Tarjeta de evaluación — completar y entregar
+EVALUADOR: sebastian
+ 
+EVALUADO: josue
+ 
+ESCENARIO ELEGIDO: ESCENARIO 2
+ 
+RESUMEN DE LA RESPUESTA:Platocard es un componente reutilizable
+ 
+QUÉ ENTENDIÓ BIEN: que es un componente
+ 
+QUÉ NECESITA REPASAR: la estructura del componente platocard
+ 
+

@@ -1,0 +1,13 @@
+1. En el Sprint 0 tenías renderMenu() con innerHTML. Hoy construiste PlatoCard. ¿Qué diferencia concreta hay en cómo cada uno actualiza la pantalla cuando cambia un solo plato? Menciona el Virtual DOM en tu respuesta
+En el Sprint 0 usábamos una función como renderMenu() que utilizaba innerHTML. Cuando cambiaba un plato, la función volvía a escribir todo el contenido de la carta en el contenedor. Eso significa que el navegador recreaba todos los elementos del DOM otra vez, incluso los que no habían cambiado.
+El Virtual DOM es como una copia del DOM en memoria. Cuando cambia un dato, React compara la versión nueva con la anterior y solo actualiza
+
+2. Qué es JSX
+JSX es una forma de escribir código en React que se parece a HTML, pero en realidad forma parte de JavaScript. Sirve para crear la estructura de la interfaz de manera más fácil de leer.
+
+3. Por qué es importante que PlatoCard tenga los mismos campos del API
+El componente PlatoCard usa los mismos datos que más adelante va a devolver el endpoint GET /api/platos, como el nombre del plato, la categoría, el precio, el stock y si está disponible.
+
+4. Qué problema resuelve Vite
+Hoy usamos React con CDN para probarlo rápido sin instalar nada. Esto sirve para aprender, pero no es la forma que se usa normalmente para desarrollar proyectos grandes.
+Vite resuelve eso porque prepara el proyecto para trabajar con varios archivos

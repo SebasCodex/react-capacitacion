@@ -1,7 +1,7 @@
 export default function PlatoCard({ plato }) {
 
     return (
-        <div className={`card ${plato.disponible ? "disponible" : "agotado"}`}>
+        <div className={`card ${plato.disponible ? "disponible " : "agotado "}`}>
 
             <h3>{plato.nombre}</h3>
 
@@ -12,7 +12,7 @@ export default function PlatoCard({ plato }) {
             <p>Stock: {plato.stock}</p>
 
             <p>
-                {plato.disponible ? " Disponible" : " Agotado"}
+                {plato.disponible ? " Disponible " : " Agotado "}
             </p>
 
         </div>

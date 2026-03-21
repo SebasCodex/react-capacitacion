@@ -6,16 +6,16 @@ export default function MesaCard({ mesa }) {
 
         <div className={`card ${estado}`}>
 
-            <h3>Mesa {numero}</h3>
+            <h3>mesa {numero}</h3>
 
-            <p>Capacidad: {capacidad}</p>
+            <p>capacidad: {capacidad}</p>
 
-            <p>Comensales: {comensales}</p>
+            <p>comensales: {comensales}</p>
 
             <p>
-                {estado === "libre" && "🟢 Libre"}
-                {estado === "ocupada" && "🔴 Ocupada"}
-                {estado === "reservada" && "🟡 Reservada"}
+                {estado === "libre" && "🟢  Libre"}
+                {estado === "ocupada" && "🔴  Ocupada"}
+                {estado === "reservada" && "🟡  Reservada"}
             </p>
 
         </div>

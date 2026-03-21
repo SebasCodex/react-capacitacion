@@ -1,11 +1,11 @@
-1. ¿Qué hace main.jsx y qué pasaría si lo borras?
-main.jsx es como el punto de inicio de toda la app. Ahí es donde React se conecta con el HTML (el div con id "root") y donde se renderiza el componente principal, normalmente App.
+1. Diferencia entre props y estado (con MesaCard)
+Las props son datos que el componente recibe desde afuera (desde el padre) y el componente no los crea. En cambio, el estado (state) es información interna del componente que puede cambiar con el tiempo.
 
-2. ¿Por qué PlatoCard va en components/ y Home en pages/?
-PlatoCard es un componente pequeño y reutilizable. Sirve para mostrar un solo plato y se puede usar varias veces dentro de la app. Por eso va en components/.
+2. Por qué las props son de solo lectura
+Las props no se pueden modificar dentro del componente hijo porque React sigue un flujo de datos de arriba hacia abajo 
 
-3. ¿Por qué ahora sí funciona el import con Vite y antes no con CDN?
-Antes, cuando usaba React con CDN, todo estaba en un solo archivo HTML y el navegador no podía manejar bien imports entre archivos como jsx o js
+3. Qué cambiará en NavBar en el Día 7 y qué no
+Cuando uses React Router, lo que cambiará es que los textos como “Carta”, “Mesas” y “Comandas” ya no serán <span>, sino componentes <Link>
 
-4. ¿Qué va en hooks/, services/ y context/?
-Las carpetas hooks,services y context se van a usar más adelante cuando la app crezca. En hooks/ voy a guardar funciones reutilizables de React.
+4. Cómo saber si un componente recibió bien las props usando DevTools
+En React DevTools puedes hacer click en un componente (por ejemplo MesaCard) y ver directamente las props que recibió. Ahí aparece un objeto con todos los datos.

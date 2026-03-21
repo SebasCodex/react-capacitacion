@@ -1,7 +1,13 @@
 import Home from "./pages/Home";
+import MesasPage from "./pages/MesasPage";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <Home />
+      <MesasPage />
+    </div>
+  );
 }
 
 export default App;

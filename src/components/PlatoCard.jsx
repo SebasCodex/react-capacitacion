@@ -12,7 +12,7 @@ export default function PlatoCard({ plato }) {
             <p>Stock: {plato.stock}</p>
 
             <p>
-                {plato.disponible ? "✅ Disponible" : "❌ Agotado"}
+                {plato.disponible ? " Disponible" : " Agotado"}
             </p>
 
         </div>

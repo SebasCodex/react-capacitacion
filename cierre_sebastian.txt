@@ -1,11 +1,12 @@
-1. Diferencia entre props y estado (con MesaCard)
-Las props son datos que el componente recibe desde afuera (desde el padre) y el componente no los crea. En cambio, el estado (state) es información interna del componente que puede cambiar con el tiempo.
+1. ¿Qué problema concreto resolvió React con los hooks que los componentes de clase no podían resolver bien? No digas "es más simple" — da un ejemplo técnico concreto
+Un problema real era reutilizar lógica entre componentes. Con clases, si querías compartir lógica (por ejemplo hacer un fetch o manejar formularios), tenías que usar HOCs o render props, que hacían el código difícil de leer y mantener.
+Con hooks puedes crear funciones reutilizables como useFetch() o useForm() y usarlas en varios componentes sin cambiar su estructura. Eso hace que la lógica esté separada y sea más fácil de reutilizar.
 
-2. Por qué las props son de solo lectura
-Las props no se pueden modificar dentro del componente hijo porque React sigue un flujo de datos de arriba hacia abajo 
+2. En la clase, handleChange usaba this.setState({ [name]: value }) para actualizar cualquier campo con una sola función. En el funcional usaron un setter por campo. ¿Cuál de los dos enfoques prefieres y por qué?
+Yo prefiero usar varios useState cuando los datos son simples, porque es más claro y cada estado es independiente.
 
-3. Qué cambiará en NavBar en el Día 7 y qué no
-Cuando uses React Router, lo que cambiará es que los textos como “Carta”, “Mesas” y “Comandas” ya no serán <span>, sino componentes <Link>
+3. En el Sprint 0 de JavaScript usaban clases de ES6. ¿En qué se parece un componente de clase de React a una clase de ES6 normal? ¿Qué agrega React.Component?
+Se parece a una clase de ES6 porque usa class, tiene un constructor, métodos y puede manejar propiedades (this).
 
-4. Cómo saber si un componente recibió bien las props usando DevTools
-En React DevTools puedes hacer click en un componente (por ejemplo MesaCard) y ver directamente las props que recibió. Ahí aparece un objeto con todos los datos.
+4.Mañana es el día de useState y useEffect en profundidad. Hoy los usaron por primera vez en el funcional. ¿Qué pregunta te quedó sin responder sobre useState que quieres que se responda mañana?
+Me gustaría entender mejor cuándo usar un solo useState con objeto y cuándo varios useState separados, porque siento que dependiendo del caso puede cambiar mucho la forma de manejar el estado

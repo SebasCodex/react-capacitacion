@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 export default function NavBar({ nombreRestaurante = "Restaurante", setPagina }) {
 
     return (
-
         <nav style={{
             display: "flex",
             justifyContent: "space-between",
@@ -27,10 +26,13 @@ export default function NavBar({ nombreRestaurante = "Restaurante", setPagina })
                     Comandas
                 </span>
 
+                <span onClick={() => setPagina("carrito")} style={{ cursor: "pointer" }}>
+                    Carrito
+                </span>
+
             </div>
 
         </nav>
-
     );
 }
 
